@@ -44,4 +44,15 @@ public class CoursesHardcodedService {
 
 	    return null;
 	  }
+  
+  public Course save(Course course) {
+	  if (course.getId() == -1 || course.getId() == 0) {
+	    course.setId(++idCounter);
+	    courses.add(course);
+	  } else {
+	    deleteById(course.getId());
+	    courses.add(course);
+	  }
+	  return course;
+	}
 }
