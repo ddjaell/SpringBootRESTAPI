@@ -41,11 +41,33 @@
     		<artifactId>mariadb-java-client</artifactId>
     		<version>2.4.1</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring 
+		Mapper사용, xml 파일을 따로 가지고 있는 mybatis dependency
+		-->
 		<dependency>
     		<groupId>org.mybatis</groupId>
     		<artifactId>mybatis-spring</artifactId>
     		<version>2.0.1</version>
+		</dependency>
+		
+		<!--  bean, Repository 구성 mybatis -->
+		<dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        
+        <!--  HikariCP dependency -->
+        <dependency>
+        	<groupId>com.zaxxer</groupId>
+        	<artifactId>HikariCP</artifactId>
+        	<version>3.4.1</version>
+    	</dependency>
+		
+		<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>slf4j-api</artifactId>
+    		<version>2.0.0-alpha0</version>
 		</dependency>
 		
 	</dependencies>
